@@ -1,0 +1,112 @@
+/* 
+    Template Name: Minimul
+    Description: Minimalist Portfolio Website Template
+    Author: Fiqisulaiman
+    Version: 1.0
+    Note: DO NOT CHANGE ANYTHING IF YOU DON'T UNDERSTAND
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+h1,
+h2,
+h3,
+h4,
+h5{
+    font-family: 'Domine';
+    margin: 0;
+}
+
+html, 
+body, 
+p, 
+span{
+    font-family: 'Assistant';
+    margin: 0;
+}
+
+html, 
+body{
+    scroll-behavior: smooth;
+}
+
+.mi-vh-50{
+    min-height: 50vh;
+}
+
+.container, 
+.container-fluid, 
+.container-lg, 
+.container-md, 
+.container-sm, 
+.container-xl, 
+.container-xxl{
+    --bs-gutter-x: 2.5rem;
+}
+
+@media (min-width: 1200px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 768px;
+    }
+}
+
+/* Text Color */
+.mi-dark{ color: #373937; }
+.mi-gray{ color: #8D8C8D; }
+.mi-light{ color: #BABABA; }
+.mi-white{ color: #FAFAFA }
+
+/* Background Color */
+.mi-bg-dark{ background: #373937; }
+.mi-bg-gray{ background: #8D8C8D; }
+.mi-bg-light{ background: #BABABA; }
+.mi-bg-white{ background: #FAFAFA }
+
+/* Anchor Button */
+.mi-btn{
+    font-family: 'Domine';
+    text-decoration: none;
+    color: #373937;
+    position: relative;   
+}
+.mi-btn:after{
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 1px;
+    width: 88%;
+    height: 2px;
+    background: #373937;
+}
+
+/* Alt Anchor Button */
+.mi-alt-btn{
+    font-family: 'Domine';
+    text-decoration: none;
+    color: #373937;
+    position: relative;   
+}
+
+/* Button */
+.mi-share-btn{
+    font-family: 'Assistant';
+    text-decoration: none;
+    color: #373937;
+    border: 2px solid #373937;
+    padding: 4px;
+    border-radius: 4px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    transition: .4s all;
+}
+.mi-share-btn:hover{
+    background: #373937;
+    color: #FAFAFA;
+}
+
+@import '/style/_colors.css';
+@import '/style/_fonts.css';
+@import '/style/_buttons.css';
+@import '/style/_others.css';
